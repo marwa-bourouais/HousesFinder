@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#2B2B2B</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="darkGrey">#3F3F3F</color>
+    <color name="grey">#91E7E4E4</color>
+    <color name="shimmer_background">#dddddd</color>
+    <color name="whiteGrey">#F0F0F0</color>
+    <color name="orange">#FF6050</color>
+    <color name="deepPink">#FF0E83</color>
+    <color name="canberry">#D54262</color>
+    <color name="cosmic">#813867</color>
+    <color name="bossanova">#66336E</color>
+    <color name="blackGrape">#341539</color>
+    <color name="mediumBlue">#839BFD</color>
+    <color name="lightBlue">#DDE3FE</color>
+
+</resources>

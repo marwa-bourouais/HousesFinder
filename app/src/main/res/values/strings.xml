@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">HousesFinder</string>
+    <string name="title_home">Accueil</string>
+    <string name="title_add">Ajouter</string>
+    <string name="title_notifications">Anonces</string>
+    <string name="next_button">Suivant</string>
+    <string name="submit_button">Valider</string>
+    <string name="annonce_details">Sur l'immobilier </string>
+    <string name="seller_details"> A propos de vous  </string>
+    <string name="annonce_photos">Images de  l'immobilier </string>
+
+    <string-array name="types">
+        <item>Maison</item>
+        <item>Local</item>
+        <item>Villa</item>
+
+
+    </string-array>
+
+    <string-array name="wilaya">
+
+        <item>01 Adrar</item>
+        <item>02 Chlef</item>
+        <item>03 Laghouat</item>
+        <item>04 Oum El Bouaghi</item>
+        <item>05 Batna</item>
+        <item>06 Béjaïa</item>
+        <item>07 Biskra</item>
+        <item>08 Béchar</item>
+        <item>09 Blida</item>
+        <item>10 Bouira</item>
+        <item>11 Tamanrasset</item>
+        <item>12 Tébessa</item>
+        <item>13 Tlemcen</item>
+        <item>14 Tiaret</item>
+        <item>15 Tizi Ouzou</item>
+        <item>16 Alger</item>
+        <item>17 Djelfa</item>
+        <item>18 Jijel</item>
+        <item>19 Sétif</item>
+        <item>20 Saïda</item>
+        <item>21 Skikda</item>
+        <item>22 Sidi Bel Abbès</item>
+        <item>23 Annaba</item>
+        <item>24 Guelma</item>
+        <item>25 Constantine</item>
+        <item>26 Médéa</item>
+        <item>27 Mostaganem</item>
+        <item>28 M’Sila</item>
+        <item>29 Mascara</item>
+        <item>30 Ouargla</item>
+        <item>31 Oran</item>
+        <item>32 El Bayadh</item>
+        <item>33 Illizi</item>
+        <item>34 Bordj Bou Arreridj</item>
+        <item>35 Boumerdès</item>
+        <item>36 El Tarf</item>
+        <item>37 Tindouf</item>
+        <item>38 Tissemsilt</item>
+        <item>39 El Oued</item>
+        <item>40 Khenchela</item>
+        <item>41 Souk Ahras</item>
+        <item>42 Tipaza</item>
+        <item>43 Mila</item>
+        <item>44 Aïn Defla</item>
+        <item>45 Naâma</item>
+        <item>46 Aïn Témouchent</item>
+        <item>47 Ghardaia</item>
+        <item>48 Relizane</item>
+    </string-array>
+
+
+</resources>
