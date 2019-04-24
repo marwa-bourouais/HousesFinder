@@ -5,9 +5,10 @@
     <string name="title_notifications">Anonces</string>
     <string name="next_button">Suivant</string>
     <string name="submit_button">Valider</string>
-    <string name="annonce_details">Sur l'immobilier </string>
+    <string name="annonce_details">Sur l\'immobilier </string>
     <string name="seller_details"> A propos de vous  </string>
-    <string name="annonce_photos">Images de  l'immobilier </string>
+    <string name="annonce_photos">Images de  l\'immobilier </string>
+    <string name="main_title">Filtrer</string>
 
     <string-array name="types">
         <item>Maison</item>
@@ -68,6 +69,10 @@
         <item>47 Ghardaia</item>
         <item>48 Relizane</item>
     </string-array>
-
+    <string-array name="filter_array">
+        <item>Wilaya</item>
+        <item>Prix</item>
+        <item>Superficie</item>
+    </string-array>
 
 </resources>
