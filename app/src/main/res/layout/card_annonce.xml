@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_margin="10dp" android:background="@color/grey"
+            android:gravity="center"
+            android:layout_gravity="center">
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp" app:srcCompat="@color/design_default_color_primary_dark"
+                android:id="@+id/cardImage"/>
+        <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:visibility="visible" android:layout_margin="15dp"
+                android:layout_marginTop="24dp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:gravity="center|center_vertical">
+                <TextView
+                        android:text="Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cardTitle" android:layout_marginTop="10dp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/kollektif_bold"
+                        android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:textSize="18sp"/>
+                <TextView
+                        android:text="-"
+                        android:gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tiret" android:layout_marginTop="10dp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/kollektif_bold"
+                        android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+                <TextView
+                        android:text="Wilaya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cardWilaya" android:layout_marginTop="10dp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/kollektif_bold"
+                        android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+            </LinearLayout>
+            <TextView
+                    android:text="600 m²"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CardArea" android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/kollektif_bold"
+                    android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:gravity="center"/>
+            <TextView
+                    android:text="100000 DA"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cardPrice" android:layout_marginTop="10dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/kollektif_bold"
+                    android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:textSize="18sp"/>
+            <Button
+                    android:text="Détails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/button"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
