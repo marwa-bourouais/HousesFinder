@@ -89,15 +89,13 @@ class MainActivity : AppCompatActivity() {
             layoutItem.cardPrice.text = item.price.toString()!! + "DA"
             layoutItem.CardArea.text = item.area.toString()!! + "m²"
 
-            /*layoutItem.setOnClickListener(View.OnClickListener {
+            layoutItem.seeDetails.setOnClickListener(View.OnClickListener {
                 //move to details
-                val intent = Intent(context,CardDetails::class.java)
-                intent.putExtra("title",item.title!!)
-                intent.putExtra("description",item.des!!)
-                intent.putExtra("photo",item.photo!!)
-                intent.putExtra("rate",item.rate!!)
+                val intent = Intent(context,AnnonceDetails::class.java)
+
+                intent.putExtra("item",position)
                 context!!.startActivity(intent)
-            })*/
+            })
             return layoutItem
         }
 

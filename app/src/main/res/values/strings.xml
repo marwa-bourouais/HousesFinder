@@ -5,9 +5,9 @@
     <string name="title_notifications">Anonces</string>
     <string name="next_button">Suivant</string>
     <string name="submit_button">Valider</string>
-    <string name="annonce_details">Sur l\'immobilier </string>
-    <string name="seller_details"> A propos de vous  </string>
-    <string name="annonce_photos">Images de  l\'immobilier </string>
+    <string name="annonce_details">Sur l\'immobilier</string>
+    <string name="seller_details">A propos de vous</string>
+    <string name="annonce_photos">Images de l\'immobilier</string>
     <string name="main_title">Filtrer</string>
 
     <string-array name="types">

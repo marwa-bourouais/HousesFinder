@@ -34,7 +34,7 @@ dependencies {
     //Material design library
     implementation 'com.google.android.material:material:1.0.0'
     //Image picking
-   // implementation 'com.github.esafirm.android-image-picker:imagepicker:2.0.0'
+    // implementation 'com.github.esafirm.android-image-picker:imagepicker:2.0.0'
     // for experimental rx picker
     //implementation 'com.github.esafirm.android-image-picker:rximagepicker:2.0.0'
     // If you have a problem with Glide, please use the same Glide version or simply open an issue
