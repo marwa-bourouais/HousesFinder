@@ -28,13 +28,12 @@
 
 
             <Button
-                    android:text="@string/next_button"
+                    android:text="@string/submit_button"
                     android:layout_width="wrap_content"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:layout_height="wrap_content"
-
-
-                    android:id="@+id/button_suivant_photos" android:layout_marginLeft="250dp"/>
+                    android:id="@+id/button_valider"
+                    android:layout_marginLeft="250dp"/>
 
         </androidx.appcompat.widget.Toolbar>
 

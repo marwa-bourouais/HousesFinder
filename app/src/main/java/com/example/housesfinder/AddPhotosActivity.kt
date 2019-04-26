@@ -9,21 +9,33 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_add_annonce_photos.*
+import java.lang.Double.parseDouble
 
 
 class AddPhotosActivity : AppCompatActivity() {
     private  val REQUEST_PICK_PHOTO = 1
     private var photos_number=0
     private val photos_max_number=6
+    private  var  uriList :ArrayList<Uri> =ArrayList<Uri>()
+    private var infoList:ArrayList<String> =ArrayList<String>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_annonce_photos)
+        infoList=intent.getStringArrayListExtra("info")
+
+
 
         // next  button
-        button_suivant_photos.setOnClickListener {
-            startActivity(Intent(this, AddSellerDetailsActivity::class.java)) }
+        button_valider.setOnClickListener {
+
+            val anonce = Anonce (parseDouble(infoList[0]),infoList[2],parseDouble(infoList[1]),infoList[3],uriList,MainActivity.mainSeller)
+            MainActivity.listAnnoce.add(anonce)
+            startActivity(Intent(this, MainActivity::class.java))
+
+
+        }
 
 
 
@@ -70,6 +82,10 @@ class AddPhotosActivity : AppCompatActivity() {
                     if (photos_number<4)
                     { displayImage(uri,1)}
                    else { displayImage(uri,2)}
+
+
+
+                    uriList.add(uri)
                 }
             }
         }

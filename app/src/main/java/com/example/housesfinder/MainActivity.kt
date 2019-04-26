@@ -3,7 +3,11 @@ package com.example.housesfinder
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.widget.FrameLayout
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.BaseAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -16,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     companion object {
         var listAnnoce = ArrayList<Anonce>()
         var listSellers = ArrayList<Seller>()
-        var connectedSeller = Seller("sihem","Bouhenniche","055189142","fs@esi.dz")
+       lateinit  var  mainSeller:Seller
     }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -31,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, AddDetailsActivity::class.java))
 
             }
-            R.id.navigation_notifications -> {
+            R.id.navigation_profile -> {
                 val fragment = FragmentProfile()
                 addFragment(fragment)
                 return@OnNavigationItemSelectedListener true
@@ -75,6 +79,12 @@ class MainActivity : AppCompatActivity() {
         addFragment(fragment)
     }
 
+
+
+
+
+
+
     private fun addFragment(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
@@ -83,4 +93,8 @@ class MainActivity : AppCompatActivity() {
             .addToBackStack(fragment.javaClass.getSimpleName())
             .commit()
     }
+
+
+
+
 }

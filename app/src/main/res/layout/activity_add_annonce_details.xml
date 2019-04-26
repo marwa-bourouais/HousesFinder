@@ -73,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:id="@+id/editText2" android:inputType="number" android:hint="Superificie "
+            android:id="@+id/superficie" android:inputType="number" android:hint="Superificie "
             android:textAppearance="@android:style/TextAppearance.Material.Caption"
             style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox" android:layout_margin="8dp"
     />
@@ -94,7 +94,7 @@
             android:layout_margin="8dp"/>
     <Spinner
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/spinner2" android:visibility="visible"
+            android:layout_height="wrap_content" android:id="@+id/wilaya" android:visibility="visible"
             android:spinnerMode="dropdown" style="@style/Widget.AppCompat.Spinner.DropDown"
             android:layout_margin="8dp" android:entries="@array/wilaya"/>
     <View
@@ -111,7 +111,7 @@
                 android:layout_width="294dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:id="@+id/editText4" android:inputType="number" android:hint="Prix primaire "
+                android:id="@+id/prix" android:inputType="number" android:hint="Prix primaire "
                 style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox" android:layout_margin="8dp"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
         <ImageView
@@ -139,7 +139,7 @@
 
     <Spinner
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/spinner3" android:visibility="visible"
+            android:layout_height="wrap_content" android:id="@+id/type" android:visibility="visible"
             android:spinnerMode="dropdown" style="@style/Widget.AppCompat.Spinner.DropDown"
             android:layout_margin="8dp" android:entries="@array/types"/>
     <androidx.constraintlayout.widget.ConstraintLayout

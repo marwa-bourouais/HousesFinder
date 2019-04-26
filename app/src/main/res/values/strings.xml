@@ -2,7 +2,7 @@
     <string name="app_name">HousesFinder</string>
     <string name="title_home">Accueil</string>
     <string name="title_add">Ajouter</string>
-    <string name="title_notifications">Anonces</string>
+    <string name="title_profile">Profile</string>
     <string name="next_button">Suivant</string>
     <string name="submit_button">Valider</string>
     <string name="annonce_details">Sur l\'immobilier</string>
@@ -11,7 +11,7 @@
     <string name="main_title">Filtrer</string>
 
     <string-array name="types">
-        <item>Maison</item>
+        <item>Appartement</item>
         <item>Local</item>
         <item>Villa</item>
 
