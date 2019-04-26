@@ -19,8 +19,8 @@ class FragmentProfile :Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        fullName.text = MainActivity.connectedSeller.firstName + " " + MainActivity.connectedSeller.lastName
-        emailProfile.text = MainActivity.connectedSeller.email
-        phoneProfile.text = MainActivity.connectedSeller.phoneNumber
+        fullName.text = MainActivity.mainSeller.firstName + " " + MainActivity.mainSeller.lastName
+        emailProfile.text = MainActivity.mainSeller.email
+        phoneProfile.text = MainActivity.mainSeller.phoneNumber
     }
 }

@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -62,7 +63,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun initListSellers(){
-        listSellers.add(connectedSeller)
+        listSellers.add(mainSeller)
         listSellers.add(Seller("oussama","Bouhenniche","055189178","fo@ufc.dz"))
         listSellers.add(Seller("asma","Bouhenniche","055189178","fa@ufc.dz"))
         listSellers.add(Seller("maroua","Bourouais","055189178","fm@esi.dz"))
@@ -70,8 +71,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initListSellers()
-        initListAnnonces()
+        if(listAnnoce.isEmpty()){
+            initListSellers()
+            initListAnnonces()
+        }
         content = findViewById<FrameLayout>(R.id.frame_container)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
