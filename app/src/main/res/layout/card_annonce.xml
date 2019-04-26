@@ -64,15 +64,15 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/cardPrice" android:layout_marginTop="10dp"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/pink"
                     android:fontFamily="@font/kollektif_bold"
                     android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:textSize="18sp"/>
             <Button
                     android:text="Détails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/seeDetails" android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp" android:background="@color/pink_darken_2"
-                    android:backgroundTint="@color/pink_darken_2"/>
+                    android:layout_marginRight="10dp" android:background="@color/pink_opac"
+                    android:backgroundTint="@color/pink"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
