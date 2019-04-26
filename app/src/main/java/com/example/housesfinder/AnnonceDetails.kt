@@ -1,7 +1,7 @@
 package com.example.housesfinder
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_annonce_details.*
 
 class AnnonceDetails : AppCompatActivity() {
@@ -21,4 +21,5 @@ class AnnonceDetails : AppCompatActivity() {
         phoneDetails.text = annonce.seller!!.phoneNumber.toString()
         emailDetails.text = annonce.seller!!.email.toString()
     }
+
 }

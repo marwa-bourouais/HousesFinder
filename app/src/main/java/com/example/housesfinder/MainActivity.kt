@@ -9,7 +9,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -21,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     //la liste partagé des annoces :
     companion object {
         var listAnnoce = ArrayList<Anonce>()
+       lateinit  var  mainSeller:Seller
     }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, AddDetailsActivity::class.java))
 
             }
-            R.id.navigation_notifications -> {
+            R.id.navigation_profile -> {
 
                 return@OnNavigationItemSelectedListener true
             }
@@ -61,10 +61,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initList()
-        adapter = AnonceAdapter(listAnnoce,this)
+        adapter = AnonceAdapter(MainActivity.listAnnoce, this)
         annocesList.adapter = adapter
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+
     }
+
 
 
     inner class AnonceAdapter: BaseAdapter {
@@ -99,6 +101,8 @@ class MainActivity : AppCompatActivity() {
             return layoutItem
         }
 
+
+
         override fun getItem(position: Int): Any {
             return listAnnonceLocal.get(position)
         }
@@ -123,4 +127,8 @@ class MainActivity : AppCompatActivity() {
         }
         return numeric
     }
+
+
+
+
 }
