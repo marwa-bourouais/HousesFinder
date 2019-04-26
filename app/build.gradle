@@ -39,4 +39,6 @@ dependencies {
     //implementation 'com.github.esafirm.android-image-picker:rximagepicker:2.0.0'
     // If you have a problem with Glide, please use the same Glide version or simply open an issue
     implementation 'com.github.bumptech.glide:glide:4.5.0'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'com.android.support:design:26.1.0'
 }

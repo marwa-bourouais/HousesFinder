@@ -17,5 +17,17 @@
     <color name="blackGrape">#341539</color>
     <color name="mediumBlue">#839BFD</color>
     <color name="lightBlue">#DDE3FE</color>
+    
+    
+    <color name="pink_lighten_1">#EC407A</color>
+    <color name="pink_darken_2">#C2185B</color>
+    <color name="pink_darken_4">#880E4F</color>
+    <color name="pink_lighten_3">#F48FB1</color>
+    <color name="pink">#E91E63</color>
+
+    <color name="pink_opac">#80E91E63</color>
+    <color name="grey_darken_1">#212121</color>
+    <color name="grey_darken_2">#424242</color>
+
 
 </resources>
