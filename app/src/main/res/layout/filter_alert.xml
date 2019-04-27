@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clipToPadding="false"
+              android:id="@+id/linearLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@color/grey">
+
+        <TextView
+                android:text="Filtre de recherche "
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/black"
+                android:fontFamily="@font/kollektif_bold"
+                android:id="@+id/textView3" android:layout_margin="30dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginStart="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+              android:text="Trer par :"
+              android:textColor="@color/black"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"/>
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filtres" android:visibility="visible"
+            android:spinnerMode="dropdown" style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_margin="20dp"
+            android:entries="@array/filtres"/>
+
+    <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible" android:layout_margin="15dp"/>
+
+
+
+    <Button
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ok"
+            android:layout_gravity="center"/>
+</LinearLayout>

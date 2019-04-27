@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HousesFinder</string>
+    <string name="app_name">ToitPourToi</string>
     <string name="title_home">Accueil</string>
     <string name="title_add">Ajouter</string>
     <string name="title_profile">Profile</string>
@@ -17,6 +17,30 @@
 
 
     </string-array>
+
+
+    <string-array name="filtres">
+        <item>Wilaya</item>
+        <item>Prix</item>
+        <item>Date</item>
+
+
+    </string-array>
+
+    <string-array name="prix_min">
+        <item>1000</item>
+        <item>3000</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="prix_max">
+        <item>3000</item>
+        <item>5000</item>
+        <item>8000</item>
+
+    </string-array>
+
+
 
     <string-array name="wilaya">
 
@@ -69,10 +93,6 @@
         <item>47 Ghardaia</item>
         <item>48 Relizane</item>
     </string-array>
-    <string-array name="filter_array">
-        <item>Wilaya</item>
-        <item>Prix</item>
-        <item>Superficie</item>
-    </string-array>
+
 
 </resources>

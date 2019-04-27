@@ -1,17 +1,14 @@
 package com.example.housesfinder
 
 import android.app.Dialog
-import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.Window
-import android.widget.*
-import androidx.appcompat.app.AlertDialog
+import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_annonce_details.*
-import kotlinx.android.synthetic.main.dialog_custom_layout.*
 import java.lang.Double
 
 class AnnonceDetails : AppCompatActivity() {
@@ -78,8 +75,7 @@ class AnnonceDetails : AppCompatActivity() {
         else
             imgUsers.setImageResource(image.toString().toInt())
         imgUsers.setOnClickListener(View.OnClickListener {
-            Toast.makeText(applicationContext,"zoom photo",Toast.LENGTH_LONG).show()
-            Log.i("Toast","click image")
+
             showDialog(image,type)
         })
         // ADD THE NEW IMAGEVIEW WITH THE PROFILE PICTURE LOADED TO THE LINEARLAYOUT
