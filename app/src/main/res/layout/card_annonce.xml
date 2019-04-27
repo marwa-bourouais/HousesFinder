@@ -24,11 +24,13 @@
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:background="@drawable/raduis_card">
+                android:layout_height="wrap_content"
+                android:background="@drawable/raduis_card">
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp" android:gravity="center|center_vertical">
+                    android:layout_height="40dp"
+                    android:gravity="center|center_vertical">
                 <TextView
                         android:text="Type"
                         android:layout_width="wrap_content"
@@ -52,7 +54,8 @@
                     android:text="600 m²"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/CardArea" android:layout_marginTop="10dp"
+                    android:id="@+id/CardArea"
+                    android:layout_marginTop="10dp"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
                     android:textColor="@color/white"
                     android:fontFamily="@font/kollektif_bold"
@@ -67,6 +70,13 @@
                     android:textColor="@color/pink"
                     android:fontFamily="@font/kollektif_bold"
                     android:layout_marginRight="10dp" android:layout_marginLeft="10dp" android:textSize="18sp"/>
+
+            <TextView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                      android:layout_margin="13dp"
+                      android:textColor="@color/black"
+                      android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                       android:id="@+id/date"/>
             <Button
                     android:text="Détails"
                     android:layout_width="match_parent"
@@ -74,5 +84,6 @@
                     android:layout_marginRight="10dp" android:background="@color/pink_opac"
                     android:backgroundTint="@color/pink"/>
         </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

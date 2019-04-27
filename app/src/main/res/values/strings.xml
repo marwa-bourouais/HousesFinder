@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HousesFinder</string>
+    <string name="app_name">ToitPourToi</string>
     <string name="title_home">Accueil</string>
     <string name="title_add">Ajouter</string>
     <string name="title_profile">Profile</string>
@@ -17,6 +17,16 @@
 
 
     </string-array>
+
+
+    <string-array name="filtres">
+        <item>Wilaya</item>
+        <item>Prix</item>
+        <item>Date</item>
+
+
+    </string-array>
+
 
     <string-array name="wilaya">
 
