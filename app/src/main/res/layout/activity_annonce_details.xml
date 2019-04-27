@@ -31,251 +31,267 @@
             android:layout_height="4dp"
             android:background="@drawable/shadow"
             android:id="@+id/view"/>
-    <TextView
-            android:text="@string/annonce_details"
+    <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-            android:textColor="@color/lightBlue"
-            android:fontFamily="@font/kollektif_bold"
-            android:id="@+id/textView7"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="20dp"/>
-    <View
+            android:layout_height="match_parent" android:scrollbarSize="1dp" android:scrollbarStyle="insideInset">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <TextView
+                    android:text="@string/annonce_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:textColor="@color/lightBlue"
+                    android:fontFamily="@font/kollektif_bold"
+                    android:id="@+id/textView7"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp" android:textSize="20sp"/>
+            <View
 
-            android:id="@+id/divider2"
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="@color/pink_darken_2"
-            android:visibility="visible"
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/pink_darken_2"
+                    android:visibility="visible"
             />
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" android:layout_marginTop="20dp"
-            android:background="@drawable/raduis_card" android:padding="8dp">
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <TextView
-                    android:text="Type :"
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" android:layout_marginTop="20dp"
+                    android:background="@drawable/raduis_card" android:padding="8dp">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="Type :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                    <TextView
+                            android:text="....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/typeDetails" android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="Wilaya :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                    <TextView
+                            android:text="....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/wilayaDetails" android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="Prix :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                    <TextView
+                            android:text="....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/priceDetails" android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="Superficie :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                    <TextView
+                            android:text="....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/areaDetails" android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                </LinearLayout>
+                <TextView
+                        android:text="Quleques photos : "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/kollektif_bold"
+                        android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"
+                        android:id="@+id/textView" android:layout_weight="1"/>
+            </LinearLayout>
+            <HorizontalScrollView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                    android:layout_height="wrap_content" android:scrollbarSize="1dp"
+                    android:scrollbarStyle="insideInset">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                              android:orientation="horizontal" android:id="@+id/images_container"/>
+            </HorizontalScrollView>
             <TextView
-                    android:text="....."
-                    android:layout_width="wrap_content"
+                    android:text="@string/seller_details"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/typeDetails" android:layout_marginTop="10dp"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
+                    android:textColor="@color/lightBlue"
                     android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <TextView
-                    android:text="Wilaya :"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
-            <TextView
-                    android:text="....."
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/wilayaDetails" android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <TextView
-                    android:text="Prix :"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
-            <TextView
-                    android:text="....."
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/priceDetails" android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <TextView
-                    android:text="Superficie :"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
-            <TextView
-                    android:text="....."
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/areaDetails" android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
-        </LinearLayout>
-        <TextView
-                android:text="Quleques photos : "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                android:textColor="@color/white"
-                android:fontFamily="@font/kollektif_bold"
-                android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"
-                android:id="@+id/textView" android:layout_weight="1"/>
-    </LinearLayout>
-    <TextView
-            android:text="@string/seller_details"
-            android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-            android:textColor="@color/lightBlue"
-            android:fontFamily="@font/kollektif_bold"
-            android:id="@+id/textView8"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginLeft="20dp"/>
-    <View
+                    android:id="@+id/textView8"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp" android:textSize="20sp"/>
+            <View
 
-            android:id="@+id/divider6"
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="@color/pink_darken_2"
-            android:visibility="visible"
-    />
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" android:layout_marginTop="20dp"
-            android:background="@drawable/raduis_card" android:padding="8dp">
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <TextView
-                    android:text="Nom :"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
-            <TextView
-                    android:text="....."
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/fnameDetails" android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/pink_darken_2"
+                    android:visibility="visible"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" android:layout_marginTop="20dp"
+                    android:background="@drawable/raduis_card" android:padding="8dp">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="Nom :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                    <TextView
+                            android:text="....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/fnameDetails" android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="Wilaya :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"
+                            android:id="@+id/Prénom"/>
+                    <TextView
+                            android:text="....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lnameDetails" android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="Email :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                    <TextView
+                            android:text="....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/emailDetails" android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <TextView
+                            android:text="Phone :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                    <TextView
+                            android:text="....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/phoneDetails" android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/kollektif_bold"
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <TextView
-                    android:text="Wilaya :"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"
-                    android:id="@+id/Prénom"/>
-            <TextView
-                    android:text="....."
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/lnameDetails" android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <TextView
-                    android:text="Email :"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
-            <TextView
-                    android:text="....."
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/emailDetails" android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <TextView
-                    android:text="Phone :"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
-            <TextView
-                    android:text="....."
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/phoneDetails" android:layout_marginTop="10dp"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/kollektif_bold"
-                    android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
 
+
         <activity android:name=".AnnonceDetails">
         </activity>
         <activity android:name=".AddPhotosActivity">
