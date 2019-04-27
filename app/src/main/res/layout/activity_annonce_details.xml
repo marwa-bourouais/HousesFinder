@@ -272,24 +272,32 @@
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true" app:srcCompat="@android:drawable/stat_sys_phone_call"
+                            android:id="@+id/callSeller" android:layout_weight="1"
+                            app:backgroundTint="@android:color/holo_green_light"/>
                     <TextView
                             android:text="Phone :"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_marginTop="10dp"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
                             android:textColor="@color/white"
                             android:fontFamily="@font/kollektif_bold"
-                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"/>
+                            android:layout_marginRight="10dp" android:layout_marginLeft="15dp" android:textSize="18sp"
+                            android:gravity="center_vertical"/>
                     <TextView
                             android:text="....."
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:id="@+id/phoneDetails" android:layout_marginTop="10dp"
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
                             android:textColor="@color/white"
                             android:fontFamily="@font/kollektif_bold"
-                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"/>
+                            android:layout_marginRight="10dp" android:layout_weight="1" android:textSize="18sp"
+                            android:gravity="center_vertical"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

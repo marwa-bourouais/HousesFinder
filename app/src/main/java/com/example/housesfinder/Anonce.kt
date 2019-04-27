@@ -1,6 +1,7 @@
 package com.example.housesfinder
 
 import android.net.Uri
+import java.util.*
 
 class Anonce(area: Double, wilaya: String, price: Double, type: String, image: ArrayList<Uri>, seller: Seller) {
     var area : Double ?= area
@@ -9,5 +10,4 @@ class Anonce(area: Double, wilaya: String, price: Double, type: String, image: A
     var type : String ?= type
     var image : ArrayList<Uri> ?= image
     var seller : Seller ?= seller
-
 }
