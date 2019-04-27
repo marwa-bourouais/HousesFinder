@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.card_annonce.view.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.lang.Double
+import java.lang.Double.parseDouble
 import java.util.*
 
 class FragmentHome : Fragment() {
@@ -153,15 +154,18 @@ class FragmentHome : Fragment() {
         {
             Collections.sort(filteredList, object : Comparator<Anonce> {
                 override fun compare(emp1: Anonce, emp2: Anonce): Int {
+
                     return Double.compare(emp1.price!!,emp2.price!!)
 
                 }
 
+
+
             })
 
-            notifyDataSetChanged();
+                    notifyDataSetChanged()
         }
-        fun sortListByDate()
+        fun sortListByDate( )
         {
             Collections.sort(filteredList, object : Comparator<Anonce> {
                 override fun compare(emp1: Anonce, emp2: Anonce): Int {
@@ -190,15 +194,15 @@ class FragmentHome : Fragment() {
 
                     // search content in friend list
                     for (annonce :Anonce in listAnnonceLocal ) {
-                        if (annonce.wilaya!!.toLowerCase().contains(constraint.toString().toLowerCase())) {
+                        if (annonce.wilaya!!.toLowerCase().startsWith(constraint.toString().toLowerCase())) {
                             tempList.add(annonce)
-                            Log.i("info","where're here")
+
                         }
                     }
 
                     filterResults.count = tempList.size
                     filterResults.values = tempList
-                    Log.i("i","here again${tempList.size}")
+
                 } else {
                     filterResults.count = listAnnonceLocal.size
                     filterResults.values = listAnnonceLocal
@@ -216,7 +220,7 @@ class FragmentHome : Fragment() {
             @Override
             override fun  publishResults(constraint:CharSequence, results: FilterResults) {
                 filteredList = results.values  as ArrayList<Anonce>
-                Log.i("i","here again")
+
                 notifyDataSetChanged();
             }
         }
@@ -250,6 +254,7 @@ class FragmentHome : Fragment() {
 
 
 
+
         yesBtn.setOnClickListener {
             if (filterSpinner.selectedItem.toString().equals("Wilaya"))
             {
@@ -264,9 +269,11 @@ class FragmentHome : Fragment() {
 
             }
             if (filterSpinner.selectedItem.toString().equals("Prix"))
-            {
-                adapter!!.sortListByPrice()
+            {   adapter!!.sortListByPrice()
                 dialogs.hide()
+
+
+
 
             }
 
@@ -276,8 +283,6 @@ class FragmentHome : Fragment() {
          dialogs.show()
 
     }
-
-
 
 
 
