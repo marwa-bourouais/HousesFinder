@@ -82,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/seeDetails" android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/rounded_btn" android:textColor="@color/white"
+                    android:background="@drawable/rounded_btn" android:textColor="@color/cyan"
                     android:layout_marginBottom="8dp"/>
         </LinearLayout>
 
