@@ -4,7 +4,8 @@
     <color name="colorPrimaryDark">#1565C0</color>
     <color name="colorAccent">#D81B60</color>
 
-
+    <color name="cyan">#00ACC1</color>
+    <color name="bluegreylight">#B0BEC5</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="darkGrey">#3F3F3F</color>
