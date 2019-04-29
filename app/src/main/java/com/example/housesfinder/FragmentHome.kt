@@ -53,6 +53,7 @@ class FragmentHome : Fragment() {
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
+                Toast.makeText(activity,"here i am",Toast.LENGTH_SHORT)
                 if (TextUtils.isEmpty(newText)) {
                     annoncesList.clearTextFilter();
                 }

@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             initListSellers()
             initListAnnonces()
         }
-        content = findViewById<FrameLayout>(R.id.frame_container)
+        content = findViewById(R.id.frame_container)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
         val fragment = FragmentHome()
