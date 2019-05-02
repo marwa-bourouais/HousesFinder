@@ -30,10 +30,10 @@
             <Button
                     android:text="@string/submit_button"
                     android:layout_width="wrap_content"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:layout_height="wrap_content"
                     android:id="@+id/button_valider"
-                    android:layout_marginLeft="250dp"/>
+                    android:layout_marginLeft="250dp" android:background="@drawable/rounded_btn"
+                    android:textColor="@color/cyan"/>
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -82,7 +82,8 @@
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintVertical_bias="0.169"/>
+                app:layout_constraintVertical_bias="0.169" android:background="@drawable/rounded_btn"
+                android:textColor="@color/cyan"/>
 
         <LinearLayout
                 android:orientation="vertical"

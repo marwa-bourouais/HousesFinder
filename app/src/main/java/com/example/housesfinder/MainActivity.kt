@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun initListAnnonces(){
         listAnnoce.add(Anonce(6000.6,"Alger",1000000.05,"Villa", arrayListOf(
-            Uri.parse(R.drawable.home1.toString())) ,
+            Uri.parse(R.drawable.home1.toString()),Uri.parse(R.drawable.home2.toString()),Uri.parse(R.drawable.home3.toString())) ,
             listSellers[0]
         ))
         listAnnoce.add(Anonce(6000.6,"Jijel",1000000.05,"Villa", arrayListOf(
